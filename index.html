@@ -14,10 +14,10 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background: #ce0c0c;
+            background: #b9b6b6;
             padding: 50px;
         }
-        h1 { color: #a982b1; }
+        h1 { color: #ff0000; }
     </style>
 </head>
 <body>
@@ -65,6 +65,18 @@
 <h12></h12>
 
             <button>❤️ <span>0</span></button>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+
+    function botaoClicado(){
+        console.log("fui clicado")
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+</script>
+
+            <button>👍​ <span>0</span></button>
 <script>
     const botao = document.querySelector("button");
     botao.addEventListener("click", botaoClicado);
